@@ -12,7 +12,7 @@ class ClientBuilder
      * @var array
      */
     private $config = [
-        'base_uri' => 'http://www.erepublik.com/en',
+        'base_uri' => 'https://www.erepublik.com/en',
         'allow_redirects' => false,
         'headers' => [
             'User-Agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0',
