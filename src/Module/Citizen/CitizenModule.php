@@ -58,8 +58,9 @@ class CitizenModule extends Module
 
         $parseStat = function ($string, $float = false) {
             $string = trim($string);
-            $string = substr($string, 0, strpos($string, '/'));
             $string = str_ireplace(',', '', $string);
+            $string = explode('/', $string)[0];
+            $string = trim($string);
             return $float ? (float)$string : (int)$string;
         };
 
